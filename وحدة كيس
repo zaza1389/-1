@@ -1,0 +1,271 @@
+<!DOCTYPE html><html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>منصة كَيِّس</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+    header {
+      background-color: #004085;
+      color: white;
+      padding: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+      background-color: #e9f5f3;
+    }
+    .hero h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+    .hero button {
+      background-color: #007bff;
+      color: white;
+      padding: 0.75rem 2rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .features {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 2rem 1rem;
+      gap: 1rem;
+    }
+    .feature-box {
+      flex: 1 1 250px;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 1rem;
+      text-align: center;
+    }
+    .mint { background-color: #d1f2eb; }
+    .yellow { background-color: #fff9c4; }
+    .pink { background-color: #fce4ec; }.search-section {
+  margin: 2rem;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.search-section input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.search-section button {
+  align-self: flex-start;
+  padding: 0.6rem 1.5rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.book-section {
+  padding: 2rem 1rem;
+}
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+.book-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.book-card img {
+  width: 100px;
+  height: 140px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+.book-card h3 {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+.book-card p {
+  margin: 0.2rem 0;
+  font-size: 0.9rem;
+}
+.book-card button {
+  margin-top: 0.5rem;
+  background-color: #28a745;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.add-book-section {
+  padding: 2rem;
+  background-color: #ffffff;
+  margin: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.add-book-section h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.add-book-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.add-book-section input, .add-book-section select {
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+.add-book-section button {
+  width: fit-content;
+  align-self: center;
+  background-color: #004085;
+  color: white;
+  padding: 0.6rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #004085;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  header, nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .features {
+    flex-direction: column;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div><strong>Kayyis Logo</strong></div>
+    <nav>
+      <a href="#">الرئيسية</a>
+      <a href="#books">استعرض الكتب</a>
+      <a href="#add">أضف كتاب</a>
+      <a href="#">حسابي</a>
+    </nav>
+  </header>  <section class="hero">
+    <h1>شارك كتبك وساعد غيرك بسهولة</h1>
+    <p>!Share your books and help others easily</p>
+    <button>ابدأ الآن</button>
+  </section>  <section class="features">
+    <div class="feature-box mint">استلام سهل</div>
+    <div class="feature-box yellow">توفير</div>
+    <div class="feature-box pink">للطلبة</div>
+  </section>  <section class="search-section">
+    <h2>البحث المتقدم</h2>
+    <input type="text" placeholder="اسم الكتاب" />
+    <input type="text" placeholder="التخصص" />
+    <input type="text" placeholder="الجامعة" />
+    <input type="text" placeholder="الحالة" />
+    <button>بحث</button>
+  </section>  <section id="books" class="book-section">
+    <h2 style="text-align:center; margin-bottom: 1rem;">الكتب المتوفرة</h2>
+    <div class="book-grid">
+      <div class="book-card">
+        <img src="https://via.placeholder.com/100x140" alt="كتاب 1" />
+        <h3>أساسيات الكيمياء</h3>
+        <p>التخصص: كيمياء</p>
+        <p>الحالة: مستعمل بحالة جيدة</p>
+        <p>جامعة: الملك سعود</p>
+        <button>تفاصيل</button>
+      </div>
+      <div class="book-card">
+        <img src="https://via.placeholder.com/100x140" alt="كتاب 2" />
+        <h3>مقدمة في الأحياء الدقيقة</h3>
+        <p>التخصص: أحياء دقيقة</p>
+        <p>الحالة: جديد</p>
+        <p>جامعة: أم القرى</p>
+        <button>تفاصيل</button>
+      </div>
+      <div class="book-card">
+        <img src="https://via.placeholder.com/100x140" alt="كتاب 3" />
+        <h3>التحاليل الطبية</h3>
+        <p>التخصص: مختبرات</p>
+        <p>الحالة: مستعمل</p>
+        <p>جامعة: الإمام عبدالرحمن</p>
+        <button>تفاصيل</button>
+      </div>
+      <div class="book-card">
+        <img src="https://via.placeholder.com/100x140" alt="كتاب 4" />
+        <h3>الإحصاء الحيوي</h3>
+        <p>التخصص: صحة عامة</p>
+        <p>الحالة: جديد</p>
+        <p>جامعة: جدة</p>
+        <button>تفاصيل</button>
+      </div>
+    </div>
+  </section>  <section id="add" class="add-book-section">
+    <h2>أضف كتابك</h2>
+    <form>
+      <input type="text" placeholder="اسم الكتاب" required />
+      <input type="text" placeholder="التخصص" required />
+      <input type="text" placeholder="الجامعة" />
+      <select required>
+        <option value="">اختر الحالة</option>
+        <option value="جديد">جديد</option>
+        <option value="مستعمل">مستعمل</option>
+      </select>
+      <input type="url" placeholder="رابط صورة الغلاف (اختياري)" />
+      <button type="submit">إرسال</button>
+    </form>
+  </section>  <footer>
+    &copy; 2025 منصة كَيِّس
+  </footer>
+</body>
+</html>
